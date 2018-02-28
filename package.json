@@ -1,0 +1,35 @@
+{
+  "name": "string-transformations",
+  "version": "0.0.1",
+  "description": "Compilation of functions for various string transformations",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lttr/string-transformations.git"
+  },
+  "keywords": [
+    "string",
+    "text",
+    "transform",
+    "encode",
+    "cipher"
+  ],
+  "author": "Lukas Trumm",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lttr/string-transformations/issues"
+  },
+  "homepage": "https://github.com/lttr/string-transformations#readme",
+  "devDependencies": {
+    "jest": "^22.4.2",
+    "standard": "^11.0.0"
+  },
+  "standard": {
+    "envs": [
+      "jest"
+    ]
+  }
+}
