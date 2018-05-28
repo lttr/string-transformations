@@ -1,4 +1,4 @@
-const upperCase = require('../src/upperCase.js')
+import { upperCase } from "../src/upperCase.js";
 
 test('uppercase is uppercase', () => {
   const input = 'aBc'

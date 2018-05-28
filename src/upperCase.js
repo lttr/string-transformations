@@ -1,7 +1,6 @@
 /**
  * Returns uppercased string
- *
  */
-module.exports = function (input) {
+export const upperCase = (input) => {
   return input.toUpperCase()
 }
