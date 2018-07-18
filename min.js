@@ -1,1 +1,1 @@
-!function(r,u){function a(n){return r[n]||(e={exports:t={}},u[o=n].call(t,window,a,e,t),r[o]=e.exports);var o,t,e}var n=a(0);n.__esModule&&n.default}([],[function(n,o,t,e){}]);
+"use strict";!function(u,o){function p(e){return u[e]||(r={exports:n={}},o[t=e].call(n,window,p,r,n),u[t]=r.exports);var t,n,r}var e=p(0);e.__esModule&&e.default}([],[function(e,t,n,r){t(1).upperCase},function(e,t,n,r){r.upperCase=function(e){Math.pow(8,2);return e.toUpperCase()}}]);

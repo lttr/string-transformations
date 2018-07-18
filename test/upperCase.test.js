@@ -1,4 +1,4 @@
-import { upperCase } from "../src/upperCase.js";
+import { upperCase } from '../esm/upperCase.js'
 
 test('uppercase is uppercase', () => {
   const input = 'aBc'

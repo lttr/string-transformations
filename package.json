@@ -2,13 +2,16 @@
   "name": "string-transformations",
   "version": "0.0.1",
   "description": "Compilation of functions for various string transformations",
-  "main": "index.js",
+  "unpkg": "min.js",
+  "main": "cjs/index.js",
+  "module": "esm/index.js",
   "scripts": {
-    "test": "jest",
-    "asbundle": "asbundle index.js bundle.js",
-    "bundle": "npm run asbundle && npm run max && npm run min",
+    "cjs": "ascjs ./esm ./cjs",
+    "asbundle": "asbundle ./esm/index.js bundle.js",
     "max": "babel bundle.js > max.js",
-    "min": "uglifyjs max.js -m -c -o min.js"
+    "min": "uglifyjs max.js -m -c -o min.js",
+    "build": "npm run cjs && npm run asbundle && npm run max && npm run min",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -29,12 +32,13 @@
   "homepage": "https://github.com/lttr/string-transformations#readme",
   "devDependencies": {
     "asbundle": "^2.6.0",
+    "ascjs": "^2.4.0",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-jest": "^23.0.1",
     "babel-preset-env": "^1.7.0",
     "jest": "^22.4.2",
-    "standard": "^11.0.0",
+    "prettier": "^1.13.7",
     "uglify-js": "^3.3.27"
   },
   "standard": {

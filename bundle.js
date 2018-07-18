@@ -9,5 +9,18 @@
   return main.__esModule ? main.default : main;
 }([],[function (global, require, module, exports) {
 // index.js
+'use strict';
+const { upperCase } = require(1)
 
+},function (global, require, module, exports) {
+// upperCase.js
+'use strict';
+/**
+ * Returns uppercased string
+ */
+const upperCase = (input) => {
+  const a = 8**2;
+  return input.toUpperCase()
+}
+exports.upperCase = upperCase
 }]));
