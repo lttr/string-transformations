@@ -5,17 +5,15 @@
   "unpkg": "min.js",
   "main": "cjs/index.js",
   "module": "esm/index.js",
-  "scripts": {
-    "cjs": "ascjs ./esm ./cjs",
-    "asbundle": "asbundle ./esm/index.js bundle.js",
-    "max": "babel bundle.js > max.js",
-    "min": "uglifyjs max.js -m -c -o min.js",
-    "build": "npm run cjs && npm run asbundle && npm run max && npm run min",
-    "test": "jest"
-  },
+  "author": "Lukas Trumm",
+  "license": "MIT",
+  "homepage": "https://github.com/lttr/string-transformations#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lttr/string-transformations.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lttr/string-transformations/issues"
   },
   "keywords": [
     "string",
@@ -24,12 +22,14 @@
     "encode",
     "cipher"
   ],
-  "author": "Lukas Trumm",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/lttr/string-transformations/issues"
+  "scripts": {
+    "cjs": "ascjs ./esm ./cjs",
+    "asbundle": "asbundle ./esm/index.js bundle.js",
+    "max": "babel bundle.js > max.js",
+    "min": "uglifyjs max.js -m -c -o min.js",
+    "build": "npm run cjs && npm run asbundle && npm run max && npm run min",
+    "test": "jest"
   },
-  "homepage": "https://github.com/lttr/string-transformations#readme",
   "devDependencies": {
     "asbundle": "^2.6.0",
     "ascjs": "^2.4.0",
