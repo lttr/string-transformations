@@ -3,3 +3,6 @@ test/*
 .gitignore
 CHANGELOG.md
 package-lock.json
+.vscode
+.babelrc
+.pretierrc
